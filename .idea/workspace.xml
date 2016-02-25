@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00e90a72-7eb0-4ec1-8c5f-6a8ecc4feadb" name="Default" comment="adecuación operaciones basicas." />
-    <list id="c804f443-2b8b-4c3b-af08-e36c53836076" name="rebeca cv" comment="rebeca cv">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+    <list default="true" id="00e90a72-7eb0-4ec1-8c5f-6a8ecc4feadb" name="Default" comment="adecuación operaciones basicas.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="REBECA_reconsystem.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +33,8 @@
       <file leaf-file-name="DataBaseREBECA.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/go/proyect/rbc/rebeca_reconsystem/DataBaseREBECA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39867842">
-              <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.24889868">
+              <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
               <folding>
                 <element signature="e#289#313#0" expanded="true" />
               </folding>
@@ -1822,7 +1819,7 @@
       <updated>1456380194568</updated>
     </task>
     <task id="LOCAL-00003" summary="rebeca cv">
-      <changelist id="c804f443-2b8b-4c3b-af08-e36c53836076" name="rebeca cv" comment="" />
+      <changelist id="" name="rebeca cv" comment="" />
       <created>1456380214081</created>
       <option name="number" value="00003" />
       <option name="project" value="LOCAL" />
@@ -1864,7 +1861,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456381863130</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="rebeca cv">
+      <created>1456381992221</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1456381992221</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -1913,9 +1916,9 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="version 1.2" />
     <MESSAGE value="Create README.md" />
-    <MESSAGE value="rebeca cv" />
     <MESSAGE value="adecuación operaciones basicas." />
-    <option name="LAST_COMMIT_MESSAGE" value="adecuación operaciones basicas." />
+    <MESSAGE value="rebeca cv" />
+    <option name="LAST_COMMIT_MESSAGE" value="rebeca cv" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1947,8 +1950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/go/proyect/rbc/rebeca_reconsystem/DataBaseREBECA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39867842">
-          <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.24889868">
+          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
           <folding>
             <element signature="e#289#313#0" expanded="true" />
           </folding>
