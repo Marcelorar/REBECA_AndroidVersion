@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list id="00e90a72-7eb0-4ec1-8c5f-6a8ecc4feadb" name="Default" comment="Create README.md" />
     <list default="true" id="c804f443-2b8b-4c3b-af08-e36c53836076" name="rebeca cv" comment="rebeca cv">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/REBECA_reconSystem.iml" afterPath="$PROJECT_DIR$/REBECA_reconSystem.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="REBECA_reconsystem.iws" />
@@ -1759,7 +1758,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456380214428</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rebeca cv">
+      <created>1456380429016</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1456380429016</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
