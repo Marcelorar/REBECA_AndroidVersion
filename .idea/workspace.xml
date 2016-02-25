@@ -1764,7 +1764,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456380429016</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rebeca cv">
+      <created>1456380455295</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1456380455295</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
