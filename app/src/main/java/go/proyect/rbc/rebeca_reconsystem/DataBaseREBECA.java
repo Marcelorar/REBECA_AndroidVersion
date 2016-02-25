@@ -1,5 +1,6 @@
 package go.proyect.rbc.rebeca_reconsystem;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,6 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by Marcelo on 1/12/2015.
  */
+@SuppressWarnings("ALL")
 public class DataBaseREBECA extends SQLiteOpenHelper{
 
     //Sentencia SQL para crear la tabla de referencias
@@ -42,57 +44,67 @@ public class DataBaseREBECA extends SQLiteOpenHelper{
         SQLiteDatabase db = ref.getWritableDatabase();
         String respuestaAnls= "Aún no aprendo que significa eso";
         String[] args = new String[] {texto};
-        Cursor c = db.rawQuery(" SELECT respuesta,request,id FROM referencias WHERE request LIKE ?", args);
+        @SuppressLint("Recycle") Cursor c = db.rawQuery(" SELECT respuesta,request,id FROM referencias WHERE request LIKE ?", args);
 
         if (c.moveToFirst()) {
           respuestaAnls  = c.getString(0);
         }
         if (Integer.parseInt(c.getString(2)) == 8) {
-            int res = 0;
-            int i;
-            String oper1 = null, oper2 = null;
-            int op1 = Integer.parseInt(oper1);
-            int op2 = Integer.parseInt(oper2);
+            String res;
+            String operacion = "";
+            String oper1 = "", oper2 = "";
 
 
-            for (i = 0; i <= texto.indexOf("más") || i <= texto.indexOf("menos") || i <= texto.indexOf("para") || i <= texto.indexOf("por"); i++) {
+            for (int i = 0; i <= texto.indexOf("más") || i <= texto.indexOf("menos") || i <= texto.indexOf("para") || i <= texto.indexOf("por"); i++) {
                 char caracter = texto.charAt(i);
 
-                if (Character.isLetter(caracter)) {
-                } else {
+                if (!Character.isLetter(caracter)) {
+
                     oper1 += caracter;
                 }
             }
 
-            for (int j = i; j <= texto.length(); i++) {
+            for (int i = 0; i >= texto.indexOf("más") || i >= texto.indexOf("menos") || i >= texto.indexOf("para") || i >= texto.indexOf("por"); i++) {
                 char caracter = texto.charAt(i);
 
-                if (Character.isLetter(caracter)) {
-                } else {
+                if (!Character.isLetter(caracter)) {
+
                     oper2 += caracter;
                 }
             }
-            String val = null;
-            for (int a = texto.indexOf(op1); a <= texto.indexOf(op2); a++) {
-                if (Character.isLetter(texto.charAt(a))) {
-                    val += texto.charAt(a);
-                }
+
+            if (texto.indexOf("más") != 0) {
+                operacion = "suma";
             }
-            switch (val) {
-                case "más":
-                    res = op1 + op2;
+            if (texto.indexOf("menos") != 0) {
+                operacion = "rest";
+            }
+            if (texto.indexOf("para") != 0) {
+                operacion = "div";
+            }
+            if (texto.indexOf("por") != 0) {
+                operacion = "mult";
+            }
+
+            switch (operacion) {
+                case "suma":
+                    res = Integer.toString(Integer.parseInt(oper1) + Integer.parseInt(oper2));
                     break;
-                case "menos":
-                    res = op1 - op2;
+                case "rest":
+                    res = Integer.toString(Integer.parseInt(oper1) - Integer.parseInt(oper2));
                     break;
-                case "por":
-                    res = op1 * op2;
+                case "div":
+                    res = Integer.toString(Integer.parseInt(oper1) / Integer.parseInt(oper2));
                     break;
-                case "para":
-                    res = op1 / op2;
+                case "mult":
+                    res = Integer.toString(Integer.parseInt(oper1) * Integer.parseInt(oper2));
+                    break;
+                default:
+                    res = " Indeterminado, no entiendo ese tipo de operacion.";
                     break;
             }
-            respuestaAnls += res;
+
+            res = c.getString(0) + res;
         }
 
 

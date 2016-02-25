@@ -20,9 +20,11 @@ public class Reconocer_Voz extends Activity implements TextToSpeech.OnInitListen
     DataBaseREBECA REBECA_IA =
             new DataBaseREBECA(this, "Reconocimiento", null, 1);
     //escuchar
+    @SuppressWarnings("FieldCanBeLocal")
     private Button escuchar;
     private TextView prueba;
     private ArrayList<String> text;
+    @SuppressWarnings("FieldCanBeLocal")
     private Intent escuchado;
     //private Button habla;
 
@@ -128,6 +130,7 @@ public class Reconocer_Voz extends Activity implements TextToSpeech.OnInitListen
 
 
     public void hablo(String decir) {
+        //noinspection deprecation
         hablar.speak(decir, TextToSpeech.QUEUE_FLUSH, null);
     }
 
@@ -146,12 +149,12 @@ public class Reconocer_Voz extends Activity implements TextToSpeech.OnInitListen
             if (result == TextToSpeech.LANG_MISSING_DATA
                     || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This Language is not supported");
-            } else
+            }/* else
 
             {
                 // habla.setEnabled(true);
 
-            }
+            }*/
 
         } else
 
